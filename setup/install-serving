@@ -12,10 +12,10 @@ kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIV
 kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-core.yaml"
 
 # Install Knative Istio Controller needed for Serving
-kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-istio.yaml"
+#kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-istio.yaml"
 
 # Optional: Setup Magic DNS (xip.io)
-kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-default-domain.yaml"
+#kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-default-domain.yaml"
 
 # Check all serving pods have STATUS 'Running'
 # kubectl get pods -n knative-serving

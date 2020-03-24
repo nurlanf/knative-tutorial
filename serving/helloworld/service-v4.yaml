@@ -15,7 +15,7 @@ apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
   name: helloworld
-  namespace: default
+  namespace: v4
 spec:
   template:
     metadata:
@@ -28,7 +28,7 @@ spec:
               value: "v4"
   traffic:
   - tag: current
-    revisionName: helloworld-v1
+    revisionName: helloworld-v4
     percent: 100
   - tag: latest
     latestRevision: true

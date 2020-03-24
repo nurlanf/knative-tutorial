@@ -20,7 +20,7 @@ spec:
   template:
     spec:
       containers:
-        - image: docker.io/meteatamel/helloworld:v1
+        - image: gcr.io/nurlanpremiumproject/helloworld:v1
           env:
             - name: TARGET
               value: "v1"

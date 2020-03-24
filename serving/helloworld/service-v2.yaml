@@ -14,13 +14,13 @@
 apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
-  name: helloworld
+  name: helloworld-v2
   namespace: default
 spec:
   template:
     spec:
       containers:
-        - image: docker.io/meteatamel/helloworld:v1
+        - image: gcr.io/nurlanpremiumproject/helloworld:v1
           env:
             - name: TARGET
               value: "v2"

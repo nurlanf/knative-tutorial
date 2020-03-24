@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -v
+
+DIR="$(dirname "$0")"
+. "${DIR}/config"
+
+# Install Knative Istio Controller needed for Serving
+kubectl apply -f "https://github.com/knative/serving/releases/download/v${KNATIVE_VERSION}/serving-istio.yaml"

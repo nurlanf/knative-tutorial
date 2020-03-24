@@ -6,7 +6,7 @@ export ISTIO_VERSION="1.4.6"
 
 export PROJECT_ID="nurlanfpremiumproject"
 
-export CLUSTER_NAME="knative"
+export CLUSTER_NAME="knative-1"
 
 export CLUSTER_REGION="us-central1"
 
